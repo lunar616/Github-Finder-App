@@ -20,7 +20,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].[chunkhash].js`,
     path: PATHS.dist,
-    publicPath: '/',
+    publicPath: '/Github-Finder-App',
   },
   optimization: {
     splitChunks: {
