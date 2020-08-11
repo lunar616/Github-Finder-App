@@ -1,0 +1,74 @@
+@import "./utils/vars";
+@import "./utils/reset";
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: $background-default;
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+input, textarea, select, button { border: 1px solid $border-base; }
+
+.section, section {
+  padding: 0 20px;
+}
+
+form {
+  margin-bottom: 20px;
+
+  @media (max-height: 600px) {
+    margin-bottom: 10px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+
+  &.wrapper-content--fixed {
+    margin-top: 80px;
+  }
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  max-width: $desktopWidth;
+  margin: 0 auto;
+}
+
+@import "./common.scss";

@@ -1,0 +1,15 @@
+@import '~/assets/scss/utils/vars.scss';
+
+.wrapper-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: $title-default;
+  font-size: 30px;
+  font-weight: 700;
+}
